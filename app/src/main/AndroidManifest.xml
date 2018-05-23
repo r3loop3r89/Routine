@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.shra1.routine">
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_main"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ic_main"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity android:name=".HomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".activities.SettingsActivity"
+            android:label="@string/title_settings_activity" />
+
+        <activity
+            android:name=".activities.TiffinActivity"
+            android:label="@string/title_tiffin_activity" />
+
+        <activity
+            android:name=".activities.TiffinEntryDetailsActivity"
+            android:label="@string/title_tiffin_details_activity" />
+
+        <activity
+            android:name=".activities.DailyExpenseActivity"
+            android:label="@string/title_daily_expense_activity" />
+
+        <service
+            android:name=".services.UserPresentRecieverRegistrationService"
+            android:enabled="true"
+            android:exported="false" />
+
+        <receiver
+            android:name=".recievers.ServiceRetainerReciever"
+            android:enabled="true">
+            <intent-filter
+                android:priority="999">
+                <action android:name="com.shra1.routine.YouWillNeverKillMe" />
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

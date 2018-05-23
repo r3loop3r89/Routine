@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Routine</string>
+    <string name="your_name">Your Name</string>
+    <string name="title_settings_activity">Settings</string>
+    <string name="title_tiffin_activity">Tiffin</string>
+    <string name="did_you_take_the_tiffin_today">Did you take the tiffin today ?</string>
+    <string name="title_tiffin_details_activity">Details</string>
+    <string name="spent_on">Spent for</string>
+    <string name="spent_amount">Spent Amount</string>
+    <string name="title_daily_expense_activity">Daily Expense</string>
+    <string name="entry_date">Entry Date</string>
+    <string name="rupee_symbol">₹</string>
+
+</resources>

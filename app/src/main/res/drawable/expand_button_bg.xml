@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="true">
+        <shape android:shape="oval">
+            <solid android:color="@color/colorAccent" />
+            <padding android:bottom="@dimen/expand_button_shape_padding" android:left="@dimen/expand_button_shape_padding" android:right="@dimen/expand_button_shape_padding" android:top="@dimen/expand_button_shape_padding" />
+        </shape>
+    </item>
+</selector>

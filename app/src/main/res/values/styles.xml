@@ -1,0 +1,17 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="ll_group_card">
+        <item name="android:elevation">5dp</item>
+        <item name="android:background">@drawable/settings_group_card</item>
+        <item name="android:layout_margin">5dp</item>
+    </style>
+
+</resources>
